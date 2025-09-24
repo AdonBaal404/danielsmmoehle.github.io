@@ -21,6 +21,27 @@ header {
   font-weight: bold;
   color: #0ff; /* Neon Türkis passend zum Logo */
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Bild */
+.logo img {
+  height: 60px;   /* Logo-Größe anpassen */
+  width: auto;
+  display: block;
+}
+
+/* Fallback-Text nur zeigen, wenn Bild fehlt */
+.logo span {
+  display: none;
+  margin-left: 0.5rem;
+  color: #0ff;
+}
+
+.logo img[alt]:not([src]) + span,
+.logo img[src=""] + span {
+  display: inline;
 }
 
 /* Navigation */
@@ -134,11 +155,4 @@ footer a {
 
 footer a:hover {
   color: #0ff;
-}
-
-/* Logo Bild */
-.logo img {
-  height: 60px;   /* Logo-Größe anpassen */
-  width: auto;
-  display: block;
 }
