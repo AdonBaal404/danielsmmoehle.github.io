@@ -108,6 +108,35 @@ nav a.active {
   margin: 0 auto;
 }
 
+/* Projekte Intro */
+.projekte-intro {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #1a1a1a;
+  border: 1px solid #0ff;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.projekte-intro h2 {
+  color: #0ff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.projekte-intro p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.projekte-intro strong {
+  color: #66ccff;
+}
+
+
 /* Neon-Karten */
 .neon-card {
   background: #1a1a1a;
