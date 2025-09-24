@@ -27,7 +27,7 @@ header {
 
 /* Logo Bild */
 .logo img {
-  height: 60px;   /* Logo-Größe anpassen */
+  height: auto;   /* Logo-Größe anpassen */
   width: 100px;
   display: block;
 }
