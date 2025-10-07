@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEITENTITEL – Daniel S.M. Möhle</title>
+  <title>Projekte – Daniel S.M. Möhle</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,13 +17,12 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="angebote.html">Angebote</a></li>
-        <li><a href="projekte.html">Projekte</a></li>
+        <li><a href="projekte.html" class="active">Projekte</a></li>
         <li><a href="medien.html">Medien</a></li>
         <li><a href="ueber-mich.html">Über mich</a></li>
       </ul>
     </nav>
   </header>
-
 
   <!-- Hauptinhalt -->
   <main>
@@ -39,6 +38,125 @@
         ist möglich, wird jedoch gesondert und ausdrücklich vereinbart.
       </p>
     </section>
+
+    <!-- ===== Projektliste ===== -->
+    <section class="angebote">
+      <div class="angebot-list">
+
+        <!-- VoiceHealthLog -->
+        <details class="neon-card">
+          <summary><h3>VoiceHealthLog – Sprachbasiertes Gesundheitstagebuch</h3>
+            <p>Gesundheitsdaten per Spracheingabe: präzise, lokal, intuitiv.</p></summary>
+          <p>VoiceHealthLog erkennt Symptome, Intensität und Verlauf per Spracheingabe und speichert sie strukturiert auf dem Gerät. 
+          Die App nutzt Kotlin, Jetpack Compose und Room und schützt die Privatsphäre durch vollständige Offline-Verarbeitung. 
+          Sie zeigt, wie Spracherkennung und Gesundheitsdaten elegant verbunden werden können.</p>
+        </details>
+
+        <!-- eAU-Sync -->
+        <details class="neon-card">
+          <summary><h3>eAU-Sync – Elektronische Arbeitsunfähigkeitsbescheinigungen</h3>
+            <p>Ein-Klick-Abruf für Arbeitgeber: digital, modular, teilhabeorientiert.</p></summary>
+          <p>eAU-Sync vereinfacht den Abruf elektronischer Krankmeldungen für kleine Betriebe. 
+          Das System bietet Datenbank, Archivierung, Exporte und modulare Schnittstellen, 
+          um spätere ITSG-Integration zu ermöglichen. 
+          Es demonstriert, wie zugängliche IT digitale Pflichtprozesse fair gestalten kann.</p>
+        </details>
+
+        <!-- CLEA -->
+        <details class="neon-card">
+          <summary><h3>CLEA – Citizen Legal Empowerment Assistant</h3>
+            <p>KI-Forschung für gerechteren Rechtszugang und Bürger-Mündigkeit.</p></summary>
+          <p>CLEA untersucht, wie KI jurisches Wissen für Bürger zugänglich machen kann. 
+          Simulationen und mathematische Modelle zeigen, wo Wissen und Macht auseinanderfallen. 
+          Das Projekt vereint Transparenz, Ethik und gesellschaftliche Forschung in einem Proof-of-Concept.</p>
+        </details>
+
+        <!-- OTE -->
+        <details class="neon-card">
+          <summary><h3>Open Transparency Engine (OTE)</h3>
+            <p>Finanzflüsse sichtbar machen – maschinenlesbar, offen, demokratisch.</p></summary>
+          <p>OTE sammelt und visualisiert staatliche Finanzströme, Subventionen und Lobbygelder. 
+          Als Python-Prototyp mit CSV-Datenbank und Dashboard-Vision schafft es eine Grundlage für 
+          nachvollziehbare Transparenz und eine faktenbasierte Öffentlichkeit.</p>
+        </details>
+
+        <!-- Resonanz-Kompass -->
+        <details class="neon-card">
+          <summary><h3>Der Resonanz-Kompass – Digitaler Erkenntnispfad</h3>
+            <p>Ein interaktiver Pfad durch Haltungen, Entscheidungen und Humanismus.</p></summary>
+          <p>Der Resonanz-Kompass kombiniert Storytelling, Entscheidungslogik und Reflexion. 
+          In fünf Stationen erlebt der Nutzer demokratische und ethische Haltungen interaktiv. 
+          Technisch ist es eine Single-File-Web-App mit klarer, futuristischer Gestaltung.</p>
+        </details>
+
+        <!-- HinSchG -->
+        <details class="neon-card">
+          <summary><h3>HinSchG-Prototype – Interner Hinweisgeber-Chat</h3>
+            <p>Sichere, anonyme Kommunikation mit rechtlich geprüften Fristen.</p></summary>
+          <p>Das Projekt setzt das Hinweisgeberschutzgesetz technisch um: 
+          pseudonyme Meldungen, Hash-Ketten-Datenbank, Fristenmanagement und Unit-Tests. 
+          Es zeigt, wie Compliance und Benutzerfreundlichkeit in einem leichten System verschmelzen.</p>
+        </details>
+
+        <!-- NullState -->
+        <details class="neon-card">
+          <summary><h3>NullState – Dezentrale Governance</h3>
+            <p>Politische Entscheidungen ohne Ämter und Machtkonzentration.</p></summary>
+          <p>NullState erforscht neue Formen digitaler Demokratie mit zufälligen, 
+          zeitlich begrenzten Mandaten. 
+          Entscheidungen werden transparent dokumentiert, um gerechte Teilhabe zu ermöglichen 
+          und Hierarchien aufzulösen.</p>
+        </details>
+
+        <!-- TimeBook -->
+        <details class="neon-card">
+          <summary><h3>TimeBook – Webbasierte Terminverwaltung</h3>
+            <p>Einfach, lokal und flexibel – Terminorganisation im Browser.</p></summary>
+          <p>TimeBook ermöglicht direkte Terminbuchung über Browser und speichert alles in einer SQLite-Datenbank. 
+          Ideal für kleine Unternehmen, die eine schlanke Lösung ohne Cloud-Abhängigkeit benötigen. 
+          Entwickelt in Python mit Flask.</p>
+        </details>
+
+        <!-- Rent a Pro -->
+        <details class="neon-card">
+          <summary><h3>Rent a Pro – Plattform für Selbstständige</h3>
+            <p>Faire Dienstleistungsvermittlung ohne Preisdruck und Algorithmenzwang.</p></summary>
+          <p>Rent a Pro priorisiert Aufträge nach Aufwand, Dringlichkeit und Relevanz, 
+          statt nach Preis. 
+          Kund:innen sehen nur individuelle Angebote – nicht öffentliche Preislisten. 
+          Geplant sind Kalender-Sync, Map-Suche und flexible Preismodelle.</p>
+        </details>
+
+        <!-- AmbiPass -->
+        <details class="neon-card">
+          <summary><h3>AmbiPass – Zero-Interaction Ticketing</h3>
+            <p>Privatsphäre-freundliches Fahrkartensystem mit Ephemeral IDs.</p></summary>
+          <p>AmbiPass validiert Tickets automatisch beim Einsteigen, ohne Scannen oder Identifikation. 
+          HMAC-basierte Tokens sichern Offline-Betrieb und Datenschutz. 
+          Entwickelt als Python-Simulation mit Edge-Validator und Server-Authority.</p>
+        </details>
+
+        <!-- Kinder-Konsole -->
+        <details class="neon-card">
+          <summary><h3>Kinder-Konsole – Spielerisch Programmieren lernen</h3>
+            <p>Die Eingabeaufforderung für Kinder: natürlich, freundlich, lehrreich.</p></summary>
+          <p>Diese Python-App interpretiert Alltagssprache und erklärt Rechenwege kindgerecht. 
+          Sie verbindet Logiklernen mit Spaß und macht die Magie des Rechnens verständlich. 
+          Ideal für Bildung und frühe digitale Bildung.</p>
+        </details>
+
+        <!-- SocialShield -->
+        <details class="neon-card">
+          <summary><h3>SocialShield – Deutschlands Sozialstaat als Modell</h3>
+            <p>Ein strategisches Konzept für soziale Resilienz und globale Stabilität.</p></summary>
+          <p>SocialShield verknüpft ökonomische, diplomatische und kommunikative Ansätze 
+          zu einer nationalen Friedensstrategie. 
+          Das Projekt zeigt, wie Deutschland durch soziale Investitionen 
+          internationale Stabilität fördern kann.</p>
+        </details>
+
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -51,3 +169,4 @@
   </footer>
 </body>
 </html>
+
