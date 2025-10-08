@@ -290,6 +290,7 @@ footer a:hover {
   .detail-content li {
     font-size: 0.9rem;
   }
+} /* ✅ ← dieser war vorher vergessen! */
 
 /* ========================================
    NEON-BOX (zentrale visuelle Intro-Box)
@@ -333,7 +334,4 @@ footer a:hover {
   .neon-box p {
     font-size: 0.95rem;
   }
-}
-
-   
 }
