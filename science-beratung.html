@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEITENTITEL – Daniel S.M. Möhle</title>
+  <title>Wissenschaftliche Beratung – Daniel S.M. Möhle</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="angebote.html">Angebote</a></li>
+        <li><a href="angebote.html" class="active">Angebote</a></li>
         <li><a href="projekte.html">Projekte</a></li>
         <li><a href="medien.html">Medien</a></li>
         <li><a href="ueber-mich.html">Über mich</a></li>
@@ -24,66 +24,70 @@
     </nav>
   </header>
 
-
-  <main>
-    <section class="hero">
-      <h2>Science & Beratung</h2>
-      <p>Methodische Klarheit, präzise Messungen und nachvollziehbare Auswertung – aus der Praxis der Physik & Chemie.</p>
-      <p><a class="btn" href="angebote.html">← Zurück zu Angebote</a></p>
+  <!-- Hauptinhalt -->
+  <main class="detail-main">
+    <section class="detail-intro">
+      <h2>Wissenschaftliche Beratung</h2>
+      <p>
+        Methodische Klarheit, präzise Messungen und nachvollziehbare Auswertung –
+        aus der Praxis der Physik und Chemie.
+      </p>
+      <p><a href="angebote.html" class="back-link">← Zurück zu den Angeboten</a></p>
     </section>
 
-    <section class="content grid-2">
-      <article>
-        <h3>Leistungen</h3>
-        <ul>
-          <li>Versuchsplanung & Aufbau (Physik, Chemie, Atom- & Kernphysik)</li>
-          <li>Durchführung & Messdatenerfassung, Laborprotokolle</li>
-          <li>Quantitative Auswertung, Fehlerrechnung, Unsicherheitsanalyse</li>
-          <li>Vergleich mit Literaturwerten, Plausibilisierung, Bericht/Publikation</li>
-        </ul>
+    <section class="detail-content">
+      <h3>Leistungen</h3>
+      <ul>
+        <li>Versuchsplanung & Aufbau (Physik, Chemie, Atom- & Kernphysik)</li>
+        <li>Durchführung & Messdatenerfassung, Laborprotokolle</li>
+        <li>Quantitative Auswertung, Fehlerrechnung, Unsicherheitsanalyse</li>
+        <li>Vergleich mit Literaturwerten, Plausibilisierung, Bericht/Publikation</li>
+      </ul>
 
-        <h3>Methodische Expertise</h3>
-        <ul>
-          <li><strong>Mechanik & Thermodynamik:</strong> Schwingungen (Faden-/Drehpendel, Kreisel, Elastizität), Viskosität (Stokes, Hagen-Poiseuille), Kalorimetrie, Gasthermometer.</li>
-          <li><strong>Optik:</strong> Linsen/Brennweiten (Bessel, Regression), Beugung & Gitter, Auflösungsvermögen, Dispersion (Abbe-Zahl), Mikroskopie inkl. Pixelanalyse.</li>
-          <li><strong>Elektrizität & Magnetismus:</strong> Spannungsteiler, Wheatstone-Brücke, Kompensationsmethoden, Magnetfeldmessungen, Hysterese.</li>
-          <li><strong>Chemie:</strong> Titrationen (klassisch & konduktometrisch), Ionenaustausch, Löslichkeits- & Gleichgewichtsversuche (Le Chatelier, MWG), Gasgesetze & Molmassenbestimmung.</li>
-          <li><strong>Atom- & Quantenphysik:</strong> Franck-Hertz-Versuch, Spektroskopie, Energieniveaus.</li>
-          <li><strong>Kernphysik:</strong> Zerfallsgesetze, Strahlungsabsorption, Poisson-/Gauß-Statistik, χ²-Tests, Regressionen.</li>
-          <li><strong>Rasterkraft-Analogie:</strong> Resonanzkurven, Phasenverschiebungen, Oberflächenabbildung.</li>
-        </ul>
+      <h3>Methodische Expertise</h3>
+      <ul>
+        <li><strong>Mechanik & Thermodynamik:</strong> Schwingungen, Viskosität, Kalorimetrie, Gasthermometer</li>
+        <li><strong>Optik:</strong> Linsen, Beugung, Auflösungsvermögen, Dispersion, Mikroskopie</li>
+        <li><strong>Elektrizität & Magnetismus:</strong> Spannungsteiler, Brücken, Magnetfeldmessung, Hysterese</li>
+        <li><strong>Chemie:</strong> Titrationen, Löslichkeits- & Gleichgewichtsversuche, Gasgesetze, Molmassen</li>
+        <li><strong>Atom- & Quantenphysik:</strong> Franck-Hertz, Spektroskopie, Energieniveaus</li>
+        <li><strong>Kernphysik:</strong> Zerfallsgesetze, Strahlungsabsorption, Statistik, Regression</li>
+      </ul>
 
-        <h3>Statistische Methoden</h3>
-        <ul>
-          <li>Fehlerfortpflanzung (partielle Ableitungen)</li>
-          <li>Poisson- und Gauß-Statistik, χ²-Tests</li>
-          <li>Lineare & nichtlineare Regressionen</li>
-          <li>Konfidenzintervalle, Unsicherheitsanalyse</li>
-        </ul>
-      </article>
+      <h3>Statistische Methoden</h3>
+      <ul>
+        <li>Fehlerfortpflanzung (partielle Ableitungen)</li>
+        <li>Poisson- und Gauß-Statistik, χ²-Tests</li>
+        <li>Lineare & nichtlineare Regressionen</li>
+        <li>Konfidenzintervalle, Unsicherheitsanalyse</li>
+      </ul>
 
-      <aside>
-        <h3>Use-Cases</h3>
-        <ul>
-          <li>Validierung von Messaufbauten & Sensorketten</li>
-          <li>Material- und Bauteilprüfung (thermisch, mechanisch, magnetisch)</li>
-          <li>Analyse von Strahlungs- & Spektroskopie-Daten</li>
-          <li>Oberflächenabbildung via Rasterkraft-Analogon</li>
-          <li>Didaktische Aufbereitung für Schulung/Lehre</li>
-        </ul>
+      <h3>Use-Cases</h3>
+      <ul>
+        <li>Validierung von Messaufbauten & Sensorketten</li>
+        <li>Material- und Bauteilprüfung (thermisch, mechanisch, magnetisch)</li>
+        <li>Analyse von Strahlungs- & Spektroskopiedaten</li>
+        <li>Didaktische Aufbereitung für Schulung & Lehre</li>
+      </ul>
 
-        <h3>Zusammenarbeit</h3>
-        <ol>
-          <li>Kurzbriefing & Zieldefinition</li>
-          <li>Mess-/Auswerteplan, Datenmodell & Deliverables</li>
-          <li>Durchführung & Zwischenbericht</li>
-          <li>Endreport inkl. Daten/Code</li>
-        </ol>
+      <h3>Zusammenarbeit</h3>
+      <ol>
+        <li>Kurzbriefing & Zieldefinition</li>
+        <li>Mess-/Auswerteplan, Datenmodell & Deliverables</li>
+        <li>Durchführung & Zwischenbericht</li>
+        <li>Endreport inkl. Daten/Code</li>
+      </ol>
 
-        <h3>Kontakt</h3>
-        <p>Abrechnung transparent nach Aufwand oder als Paket – je nach Projektumfang.</p>
-        <p><a class="btn" href="mailto:daniel.moe991@proton.me">Anfragen per E-Mail</a></p>
-      </aside>
+      <h3>Kontakt</h3>
+      <p>
+        Abrechnung transparent nach Aufwand oder als Paket – je nach Projektumfang.<br>
+        <a href="mailto:daniel.moe991@proton.me">Anfragen per E-Mail</a>
+      </p>
+    </section>
+
+    <section class="detail-hinweis">
+      <p><strong>Hinweis:</strong> Diese Seite beschreibt eine freiberufliche Leistung im wissenschaftlichen Kontext. 
+      Es handelt sich nicht um ein Angebot im rechtlichen Sinne. Umfang und Vergütung werden individuell vereinbart.</p>
     </section>
   </main>
 
