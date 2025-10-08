@@ -257,4 +257,31 @@ footer a:hover {
     color: #66ccff;
     font-weight: 600;
   }
+
+
+  /* Ganze Karte klickbar & ohne Unterstreichungen */
+.angebot-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.angebot-link:focus { outline: none; }
+
+/* Überschrift ohne Strich */
+.neon-card h3 {
+  border: none;            /* entfernt die Linie */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Links in Karten neutral halten */
+.neon-card a,
+.neon-card .cta-inline {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: dezent anderer Textton beim Hover der Karte */
+.angebot-link:hover .neon-card h3 { color: #66ccff; }
+
 }
