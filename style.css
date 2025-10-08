@@ -23,7 +23,7 @@ header {
 
 /* Logo Bild */
 .logo img {
-  max-height: 45px;  /* Begrenzung, damit es nicht riesig wird */
+  max-height: 45px;
   width: auto;
   display: block;
 }
@@ -164,7 +164,7 @@ nav a.active {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border: none; /* Strich unter Überschrift entfernt */
+  border: none; /* Linie unter der Überschrift entfernt */
 }
 
 .neon-card p {
@@ -173,23 +173,32 @@ nav a.active {
   color: #ddd;
 }
 
-/* Links in Angebotskarten */
-.neon-card a {
-  color: #0ff;
+/* ==== Ganze Karte klickbar & ohne Unterstreichungen (GLOBAL, nicht im @media!) ==== */
+.angebot-link {
+  display: block;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.neon-card a:hover {
-  color: #66ccff;
-  text-decoration: none;
-}
-
-.neon-card a:active,
-.neon-card a:focus {
-  color: #0ff;
-  text-decoration: none;
+  color: inherit;
   outline: none;
+}
+.angebot-link:focus,
+.angebot-link:active,
+.angebot-link:hover,
+.angebot-link:visited {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+/* Links/CTA in Karten neutral halten */
+.neon-card a,
+.neon-card .cta-inline {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Optional: dezenter Textton beim Hover der ganzen Karte */
+.angebot-link:hover .neon-card h3 {
+  color: #66ccff;
 }
 
 /* Footer */
@@ -214,7 +223,7 @@ footer a:hover {
 /* Responsive Anpassungen */
 @media (max-width: 600px) {
   .logo img {
-    max-height: 35px; /* Logo etwas kleiner auf Mobile */
+    max-height: 35px;
   }
 
   nav ul {
@@ -243,7 +252,6 @@ footer a:hover {
     position: relative;
   }
 
-  /* Bullet als kleines Neon-Symbol */
   .projekt-meta li::before {
     content: "▹";
     color: #0ff;
@@ -252,36 +260,9 @@ footer a:hover {
     font-weight: bold;
   }
 
-  /* Stärkerer Akzent für die Labels */
   .projekt-meta strong {
     color: #66ccff;
     font-weight: 600;
   }
-
-
-  /* Ganze Karte klickbar & ohne Unterstreichungen */
-.angebot-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-.angebot-link:focus { outline: none; }
-
-/* Überschrift ohne Strich */
-.neon-card h3 {
-  border: none;            /* entfernt die Linie */
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
 }
 
-/* Links in Karten neutral halten */
-.neon-card a,
-.neon-card .cta-inline {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Optional: dezent anderer Textton beim Hover der Karte */
-.angebot-link:hover .neon-card h3 { color: #66ccff; }
-
-}
