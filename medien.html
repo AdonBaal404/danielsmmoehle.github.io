@@ -22,6 +22,7 @@
       border-radius: 14px;
       box-shadow: 0 0 15px rgba(0,255,255,0.2);
       overflow: hidden;
+      cursor: pointer;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -45,6 +46,54 @@
 
     @media (max-width: 600px) {
       .media-caption { font-size: 0.85rem; }
+    }
+
+    /* --- Lightbox --- */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(5px);
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 85%;
+      border: 1px solid #0ff;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0,255,255,0.4);
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      color: #0ff;
+      font-size: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .close:hover {
+      color: #fff;
     }
   </style>
 </head>
@@ -78,42 +127,49 @@
 
     <!-- Galerie -->
     <section class="media-gallery">
-      <div class="media-item">
+      <a href="#img1" class="media-item">
         <img src="P1.jpg" alt="Aurora am Nachthimmel">
         <div class="media-caption">Polarlicht über Nordhessen – Aufnahme des geomagnetischen Sturms vom Mai 2024</div>
-      </div>
-      <div class="media-item">
-        <img src="P2.png" alt="Experimentelles Spektrum">
+      </a>
+      <a href="#img2" class="media-item">
+        <img src="P2.png" alt="Spektrale Beugung">
         <div class="media-caption">Spektrale Beugung – Lichtzerlegung durch Gitterinterferenz</div>
-      </div>
-      <div class="media-item">
-        <img src="P3.jpg" alt="Mondfotografie">
+      </a>
+      <a href="#img3" class="media-item">
+        <img src="P3.jpg" alt="Mondbeobachtung">
         <div class="media-caption">Mondbeobachtung – Libration und Kraterstruktur bei zunehmender Phase</div>
-      </div>
-      <div class="media-item">
-        <img src="G3.png" alt="Mathematische Visualisierung">
+      </a>
+      <a href="#img4" class="media-item">
+        <img src="G3.png" alt="Clausius-Clapeyron-Beziehung">
         <div class="media-caption">Clausius-Clapeyron-Beziehung – Temperatur-Druck-Gradient bei Phasenübergängen</div>
-      </div>
-      <div class="media-item">
-        <img src="G1.png" alt="Abstrakte Grafik mit Neonfarben">
+      </a>
+      <a href="#img5" class="media-item">
+        <img src="G1.png" alt="Neonform I">
         <div class="media-caption">Neonform I – Digitale Komposition mit additiver Farbmischung (Magenta / Cyan)</div>
-      </div>
-      <div class="media-item">
-        <img src="G2.png" alt="Abstrakte Grafik, violett-blau">
+      </a>
+      <a href="#img6" class="media-item">
+        <img src="G2.png" alt="Neonform II">
         <div class="media-caption">Neonform II – Strukturkomposition aus Rissmustern und Farbverläufen</div>
-      </div>
+      </a>
     </section>
 
+    <!-- Lightbox-Bilder -->
+    <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="P1.jpg" alt=""></div>
+    <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="P2.png" alt=""></div>
+    <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="P3.jpg" alt=""></div>
+    <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="G3.png" alt=""></div>
+    <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="G1.png" alt=""></div>
+    <div id="img6" class="lightbox"><a href="#" class="close">&times;</a><img src="G2.png" alt=""></div>
 
-      <div class="detail-hinweis">
-        <p>
-          <strong>Hinweis:</strong>  
-          Die hier dargestellten Inhalte dienen ausschließlich zur Veranschaulichung  
-          und sind persönliche künstlerische Arbeiten im Rahmen meiner freiberuflichen Tätigkeit.  
-          Alle Medien sind urheberrechtlich geschützt (§ 2 UrhG).
-        </p>
-      </div>
-    </section>
+    <!-- Hinweis -->
+    <div class="detail-hinweis">
+      <p>
+        <strong>Hinweis:</strong>  
+        Die hier dargestellten Inhalte dienen ausschließlich zur Veranschaulichung  
+        und sind persönliche künstlerische Arbeiten im Rahmen meiner freiberuflichen Tätigkeit.  
+        Alle Medien sind urheberrechtlich geschützt (§ 2 UrhG).
+      </p>
+    </div>
   </main>
 
   <footer>
@@ -125,4 +181,3 @@
   </footer>
 </body>
 </html>
-
