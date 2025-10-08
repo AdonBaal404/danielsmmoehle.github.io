@@ -285,5 +285,76 @@ footer a:hover {
   text-decoration: none;
 }
 
+/* Detailseiten zentriert, ruhig, wissenschaftlich */
+
+.detail-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.detail-intro h2 {
+  color: #0ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detail-intro p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  color: #66ccff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.back-link:hover {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+.detail-content {
+  margin-top: 3rem;
+  text-align: left;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.detail-content h3 {
+  color: #0ff;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.detail-content ul,
+.detail-content ol {
+  list-style-position: inside;
+  margin: 0 auto 1.5rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.detail-content li {
+  margin: 0.4rem 0;
+}
+
+.detail-hinweis {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0,255,255,0.2);
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  
 }
 
