@@ -1,6 +1,4 @@
-/* ========================================
-   GRUNDLAYOUT
-   ======================================== */
+/* Grundlayout */
 body {
   margin: 0;
   font-family: 'Segoe UI', Arial, sans-serif;
@@ -8,9 +6,7 @@ body {
   color: #e0e0e0;
 }
 
-/* ========================================
-   HEADER
-   ======================================== */
+/* Header mit Logo */
 header {
   display: flex;
   justify-content: space-between;
@@ -25,6 +21,7 @@ header {
   align-items: center;
 }
 
+/* Logo Bild */
 .logo img {
   max-height: 45px;
   width: auto;
@@ -46,9 +43,7 @@ header {
   display: inline;
 }
 
-/* ========================================
-   NAVIGATION
-   ======================================== */
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
@@ -68,9 +63,7 @@ nav a.active {
   color: #0ff;
 }
 
-/* ========================================
-   INTRO SECTIONS (z. B. Startseite)
-   ======================================== */
+/* Intro Section */
 .intro {
   text-align: center;
   padding: 5rem 2rem;
@@ -95,9 +88,7 @@ nav a.active {
   color: #66ccff;
 }
 
-/* ========================================
-   ANGEBOTE (Übersichtsseite)
-   ======================================== */
+/* Angebote Section */
 .angebote {
   padding: 3rem 2rem;
   text-align: center;
@@ -116,9 +107,7 @@ nav a.active {
   margin: 0 auto;
 }
 
-/* ========================================
-   PROJEKTE / MEDIEN / ABOUT BOXEN
-   ======================================== */
+/* Projekte / Medien / About Intro (gleicher Stil) */
 .projekte-intro,
 .medien-intro,
 .about-intro {
@@ -154,9 +143,7 @@ nav a.active {
   color: #66ccff;
 }
 
-/* ========================================
-   NEON-KARTEN
-   ======================================== */
+/* Neon-Karten */
 .neon-card {
   background: #1a1a1a;
   border: 1px solid #0ff;
@@ -177,7 +164,7 @@ nav a.active {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border: none;
+  border: none; /* Linie unter der Überschrift entfernt */
 }
 
 .neon-card p {
@@ -186,7 +173,7 @@ nav a.active {
   color: #ddd;
 }
 
-/* Ganze Karte klickbar & ohne Unterstreichungen */
+/* ==== Ganze Karte klickbar & ohne Unterstreichungen (GLOBAL, nicht im @media!) ==== */
 .angebot-link {
   display: block;
   text-decoration: none;
@@ -209,14 +196,12 @@ nav a.active {
   color: inherit;
 }
 
-/* Optional: dezenter Textton beim Hover */
+/* Optional: dezenter Textton beim Hover der ganzen Karte */
 .angebot-link:hover .neon-card h3 {
   color: #66ccff;
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -235,9 +220,7 @@ footer a:hover {
   color: #0ff;
 }
 
-/* ========================================
-   RESPONSIVE – BASISLAYOUT
-   ======================================== */
+/* Responsive Anpassungen */
 @media (max-width: 600px) {
   .logo img {
     max-height: 35px;
@@ -252,7 +235,7 @@ footer a:hover {
     padding: 3rem 1rem;
   }
 
-  /* Projekt-Metadaten */
+  /* Projekt-Metadaten (Development Stage, TRL, Ausblick) */
   .projekt-meta {
     list-style: none;
     margin: 1.2rem 0 0 0;
@@ -281,11 +264,29 @@ footer a:hover {
     color: #66ccff;
     font-weight: 600;
   }
-} /* <– dieser schließt den 600px-Block! */
 
-/* ========================================
-   DETAILSEITEN – ZENTRIERTES LAYOUT
-   ======================================== */
+
+  /* Entfernt Fokusrahmen und visuelle Klickmarkierung bei Angebotskarten */
+.angebot-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.angebot-link:focus,
+.angebot-link:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.angebot-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Detailseiten zentriert, ruhig, wissenschaftlich */
+
 .detail-main {
   max-width: 900px;
   margin: 0 auto;
@@ -293,64 +294,54 @@ footer a:hover {
   text-align: center;
 }
 
-/* Hero */
 .detail-intro h2 {
   color: #0ff;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  line-height: 1.3;
 }
 
 .detail-intro p {
   color: #ccc;
   line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 1rem;
+  margin-bottom: 1rem;
 }
 
 .back-link {
   color: #66ccff;
   text-decoration: none;
   font-size: 0.95rem;
-  display: inline-block;
-  margin-top: 0.5rem;
 }
 .back-link:hover {
   color: #0ff;
   text-decoration: underline;
 }
 
-/* Inhalt */
 .detail-content {
   margin-top: 3rem;
-  text-align: center;
+  text-align: left;
   color: #ddd;
   line-height: 1.6;
 }
 
 .detail-content h3 {
   color: #0ff;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
 }
 
-/* Listen */
 .detail-content ul,
 .detail-content ol {
   list-style-position: inside;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
   max-width: 700px;
   text-align: left;
-  padding: 0;
 }
 
 .detail-content li {
   margin: 0.4rem 0;
-  line-height: 1.6;
 }
 
-/* Hinweis */
 .detail-hinweis {
   margin-top: 3rem;
   padding-top: 1.5rem;
@@ -361,60 +352,8 @@ footer a:hover {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
-/* ========================================
-   RESPONSIVE – DETAILSEITEN
-   ======================================== */
-@media (max-width: 900px) {
-  .detail-main {
-    padding: 3rem 1rem 4rem;
-  }
 
-  .detail-intro h2 {
-    font-size: 1.8rem;
-  }
-
-  .detail-intro p {
-    font-size: 0.95rem;
-  }
-
-  .detail-content h3 {
-    font-size: 1.25rem;
-  }
-
-  .detail-content ul,
-  .detail-content ol {
-    max-width: 100%;
-    padding-left: 0;
-  }
-
-  .detail-content li {
-    font-size: 0.95rem;
-  }
-
-  .detail-hinweis {
-    font-size: 0.85rem;
-  }
+  
 }
-
-@media (max-width: 480px) {
-  .detail-main {
-    padding: 2.5rem 1rem 3.5rem;
-  }
-
-  .detail-intro h2 {
-    font-size: 1.6rem;
-  }
-
-  .detail-content h3 {
-    font-size: 1.15rem;
-  }
-
-  .detail-content li {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-}
-
