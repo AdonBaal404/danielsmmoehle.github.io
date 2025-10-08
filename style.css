@@ -290,4 +290,50 @@ footer a:hover {
   .detail-content li {
     font-size: 0.9rem;
   }
+
+/* ========================================
+   NEON-BOX (zentrale visuelle Intro-Box)
+   ======================================== */
+.neon-box {
+  background: #1a1a1a;
+  border: 1px solid #0ff;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.25);
+  padding: 3rem 2rem;
+  max-width: 850px;
+  margin: 3rem auto 4rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.neon-box h2 {
+  color: #0ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.neon-box p {
+  color: #ccc;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsiv */
+@media (max-width: 600px) {
+  .neon-box {
+    padding: 2rem 1rem;
+    margin: 2rem 1rem 3rem;
+  }
+
+  .neon-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .neon-box p {
+    font-size: 0.95rem;
+  }
+}
+
+   
 }
