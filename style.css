@@ -264,5 +264,26 @@ footer a:hover {
     color: #66ccff;
     font-weight: 600;
   }
+
+
+  /* Entfernt Fokusrahmen und visuelle Klickmarkierung bei Angebotskarten */
+.angebot-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.angebot-link:focus,
+.angebot-link:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.angebot-link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 }
 
