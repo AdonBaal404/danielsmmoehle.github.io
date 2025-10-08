@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEITENTITEL – Daniel S.M. Möhle</title>
+  <title>Wissenschaftliche Software & Coding – Daniel S.M. Möhle</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="angebote.html">Angebote</a></li>
+        <li><a href="angebote.html" class="active">Angebote</a></li>
         <li><a href="projekte.html">Projekte</a></li>
         <li><a href="medien.html">Medien</a></li>
         <li><a href="ueber-mich.html">Über mich</a></li>
@@ -24,59 +24,63 @@
     </nav>
   </header>
 
-
-  <main>
-    <section class="hero">
+  <!-- Hauptinhalt -->
+  <main class="detail-main">
+    <section class="detail-intro">
       <h2>Wissenschaftliche Software & Coding</h2>
-      <p>Vom Notebook-Prototyp bis zum robusten Auswertetool – sauber dokumentiert, reproduzierbar und praxisnah.</p>
-      <p><a class="btn" href="angebote.html">← Zurück zu Angebote</a></p>
+      <p>Von der ersten Messreihe bis zum reproduzierbaren Python-Workflow:  
+      präzise Datenanalyse, nachvollziehbare Modelle und funktionale Tools für Wissenschaft, Labor und Studium.</p>
+      <a href="angebote.html" class="back-link">← Zurück zu den Angeboten</a>
     </section>
 
-    <section class="content grid-2">
-      <article>
-        <h3>Schwerpunkte</h3>
-        <ul>
-          <li>Datenanalyse & Visualisierung (Pandas, NumPy, Matplotlib)</li>
-          <li>Model- & Curve-Fitting (SciPy): lineare und nichtlineare Regression</li>
-          <li>Fehlerrechnung & Unsicherheitsanalysen, χ²-Tests</li>
-          <li>Fourier- & Spektralanalysen (z. B. Schwingungen, Audio, Franck-Hertz-Daten)</li>
-          <li>Automatisierung von Messabläufen, Batch-Processing</li>
-          <li>Sensor-Anbindung (seriell/Bluetooth, Laborgeräte)</li>
-          <li>Reproduzierbare Reports (Jupyter, LaTeX), CLI-Tools, Dashboards</li>
-        </ul>
+    <section class="detail-content">
+      <h3>Schwerpunkte</h3>
+      <ul>
+        <li>Datenanalyse & Visualisierung (Pandas, NumPy, Matplotlib)</li>
+        <li>Model- & Curve-Fitting (SciPy): lineare und nichtlineare Regression</li>
+        <li>Fehlerrechnung & Unsicherheitsanalysen, χ²-Tests</li>
+        <li>Fourier- & Spektralanalysen (z. B. Schwingungen, Audio, Franck-Hertz-Daten)</li>
+        <li>Automatisierung von Messabläufen & Batch-Processing</li>
+        <li>Sensor-Anbindung (seriell, Bluetooth, Laborgeräte)</li>
+        <li>Reproduzierbare Reports (Jupyter, LaTeX), CLI-Tools, Dashboards</li>
+      </ul>
 
-        <h3>Beispielhafte Anwendungsfelder</h3>
-        <ul>
-          <li><strong>Mechanik:</strong> Kreisel-Datenanalyse (Rotation, Nutation, Präzession), Elastizitätsmodul-Berechnungen</li>
-          <li><strong>Optik:</strong> Brennweitenbestimmung, Gitterbeugung, Mikroskop-Pixelanalyse</li>
-          <li><strong>Akustik:</strong> Resonanzkurven, FFT-Analysen, Schallgeschwindigkeit</li>
-          <li><strong>Chemie:</strong> Titrations- & Leitfähigkeitskurven, Endpunkt-Erkennung</li>
-          <li><strong>Atomphysik:</strong> Franck-Hertz-Auswertung, Spektren-Fits</li>
-          <li><strong>Kernphysik:</strong> Zerfallsgesetze, Halbwertszeit, Strahlungsabsorption</li>
-          <li><strong>Bilddaten:</strong> Rasterkraft-Analogon (Amplitude/Phase), Oberflächenabbildung</li>
-        </ul>
-      </article>
+      <h3>Anwendungsfelder</h3>
+      <ul>
+        <li><strong>Mechanik:</strong> Kreisel-Datenanalyse, Elastizitätsmodul, Schwingungen</li>
+        <li><strong>Optik:</strong> Brennweiten, Gitterbeugung, Mikroskop-Pixelanalyse</li>
+        <li><strong>Akustik:</strong> Resonanzkurven, FFT-Analysen, Schallgeschwindigkeit</li>
+        <li><strong>Chemie:</strong> Titrationskurven, Leitfähigkeit, Endpunkt-Erkennung</li>
+        <li><strong>Atomphysik:</strong> Franck-Hertz, Spektren-Fits, Energieniveaus</li>
+        <li><strong>Kernphysik:</strong> Zerfallsgesetze, Halbwertszeiten, Absorption</li>
+        <li><strong>Bilddaten:</strong> Rasterkraft-Analogon, Phasenbilder, Oberflächenabbildung</li>
+      </ul>
 
-      <aside>
-        <h3>Workflow & Qualität</h3>
-        <ol>
-          <li>Datenschema & Zielgrößen definieren</li>
-          <li>Auswerteroutinen mit Tests & Plausibilitäten</li>
-          <li>Visualisierung & Report-Export</li>
-          <li>Übergabe inkl. Dokumentation & Parametrierung</li>
-        </ol>
+      <h3>Workflow & Qualität</h3>
+      <ol>
+        <li>Datenschema & Zielgrößen definieren</li>
+        <li>Auswerteroutinen mit Plausibilitätsprüfung & Tests</li>
+        <li>Visualisierung & Report-Export</li>
+        <li>Übergabe inkl. Dokumentation & Parametrierung</li>
+      </ol>
 
-        <h3>Deliverables</h3>
-        <ul>
-          <li>Jupyter-Notebook / Python-Paket / CLI-Tool</li>
-          <li>Plots (SVG/PNG/PDF) & Tabellen (CSV/XLSX)</li>
-          <li>Repro-Reports (z. B. LaTeX oder Markdown)</li>
-          <li>Kurzanleitung & Beispiele</li>
-        </ul>
+      <h3>Deliverables</h3>
+      <ul>
+        <li>Jupyter-Notebook / Python-Paket / CLI-Tool</li>
+        <li>Plots (SVG / PNG / PDF) & Tabellen (CSV / XLSX)</li>
+        <li>Repro-Reports (LaTeX oder Markdown)</li>
+        <li>Kurzanleitung & Beispiel-Workflows</li>
+      </ul>
 
-        <h3>Kontakt</h3>
-        <p><a class="btn" href="mailto:daniel.moe991@proton.me">Anfragen per E-Mail</a></p>
-      </aside>
+      <h3>Kontakt</h3>
+      <p>Individuelle Softwarelösungen entstehen im direkten Austausch – von der Idee bis zur Analyse.  
+      Ich entwickle klar dokumentierte, erweiterbare Tools für Forschung, Studium und Praxis.</p>
+      <p><a class="back-link" href="mailto:daniel.moe991@proton.me">Anfragen per E-Mail</a></p>
+
+      <div class="detail-hinweis">
+        <p><strong>Hinweis:</strong> Dieses Angebot umfasst ausschließlich wissenschaftliche Entwicklungs- und Analysetätigkeiten.  
+        Eine Umsetzung erfolgt im freiberuflichen Rahmen, ohne kommerzielle Produktentwicklung.</p>
+      </div>
     </section>
   </main>
 
@@ -90,3 +94,4 @@
   </footer>
 </body>
 </html>
+
