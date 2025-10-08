@@ -239,4 +239,24 @@ footer a:hover {
   font-weight: 600;
 }
 
+/* Links in Angebotskarten */
+.neon-card a {
+  color: #0ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.neon-card a:hover {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.neon-card a:active,
+.neon-card a:focus {
+  color: #0ff;
+  text-decoration: none;
+  outline: none;
+}
+
+
 }
